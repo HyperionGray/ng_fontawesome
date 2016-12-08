@@ -1,0 +1,16 @@
+name: ng2_fontawesome
+version: 4.7.0
+description: Font Awesome for Angular2
+authors:
+  - Mark E. Haase <mehaase@gmail.com>
+homepage: https://github.com/mehaase/ng2_fontawesome
+environment:
+  sdk: '>=1.12.0 <2.0.0'
+dependencies:
+  angular2: '^2.0.0'
+transformers:
+  - angular2:
+      platform_directives:
+        - package:angular2/common.dart#COMMON_DIRECTIVES
+      platform_pipes:
+        - package:angular2/common.dart#COMMON_PIPES
