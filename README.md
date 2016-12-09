@@ -1,5 +1,7 @@
 # Font Awesome for Angular2Dart
 
+[View Demo](https://hyperion-gray.gitlab.io/ng2_fontawesome_demo/)
+
 ## Basic Usage
 
 This package provides Font Awesome as an Angular2Dart component, making it easy
