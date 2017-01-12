@@ -27,7 +27,7 @@ import 'package:angular2/core.dart';
         [class.fa-stack-2x]='stack == "2x"'
       ></i>'''
 )
-class FontAwesomeIconComponent {
+class FaIcon {
     /// Render with border around the icon.
     @Input()
     bool border = false;
@@ -84,13 +84,13 @@ class FontAwesomeIconComponent {
     styleUrls: const ['css/font-awesome.min.css'],
     template: '<ul class="fa-ul"><ng-content></ng-content></ul>'
 )
-class FontAwesomeListComponent implements AfterContentInit {
+class FaList implements AfterContentInit {
     /// Default bullet to use for list items.
     @Input()
     String bullet;
 
-    @ContentChildren(FontAwesomeListItemComponent)
-    QueryList<FontAwesomeListItemComponent> childIcons;
+    @ContentChildren(FaListItem)
+    QueryList<FaListItem> childIcons;
 
     /// Implementation of AfterContentInit.
     void ngAfterContentInit() {
@@ -115,9 +115,9 @@ class FontAwesomeListComponent implements AfterContentInit {
     selector: 'fa-li',
     styleUrls: const ['css/font-awesome.min.css'],
     template: '<li><fa [name]="bullet"></fa><ng-content></ng-content></li>',
-    directives: const [FontAwesomeIconComponent]
+    directives: const [FaIcon]
 )
-class FontAwesomeListItemComponent {
+class FaListItem {
     /// Name of icon to use for this list item's bullet.
     @Input()
     String bullet;
@@ -128,6 +128,13 @@ class FontAwesomeListItemComponent {
     selector: 'fa-stack',
     styleUrls: const ['css/font-awesome.min.css'],
     template: '<span class="fa-stack"><ng-content></ng-content></span>',
-    directives: const [FontAwesomeIconComponent]
+    directives: const [FaIcon]
 )
-class FontAwesomeStackComponent {}
+class FaStack {}
+
+const List<dynamic> FA_DIRECTIVES = const [
+    FaIcon,
+    FaList,
+    FaListItem,
+    FaStack,
+];
