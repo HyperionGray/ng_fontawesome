@@ -92,3 +92,8 @@ the upstream release. The modify the `font-awesome-css` and
 
 Commit the changed files, update the version in pubspec.yaml to match the
 upstream Font Awesome version, and publish with `pub publish`.
+
+---
+
+[![define hyperion gray](https://hyperiongray.s3.amazonaws.com/define-hg.svg)](https://hyperiongray.com/?pk_campaign=github&pk_kwd=REPO "Hyperion Gray")
+
