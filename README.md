@@ -1,6 +1,6 @@
-# Font Awesome for Angular2Dart
+# Font Awesome for Angular Dart
 
-[View Demo](https://hyperiongray.github.io/ng2_fontawesome/build/web/)
+[View Demo](https://hyperiongray.github.io/ng_fontawesome/)
 
 ## Basic Usage
 
@@ -95,5 +95,5 @@ upstream Font Awesome version, and publish with `pub publish`.
 
 ---
 
-[![define hyperion gray](https://hyperiongray.s3.amazonaws.com/define-hg.svg)](https://hyperiongray.com/?pk_campaign=github&pk_kwd=ng2_fontawesome "Hyperion Gray")
+[![define hyperion gray](https://hyperiongray.s3.amazonaws.com/define-hg.svg)](https://hyperiongray.com/?pk_campaign=github&pk_kwd=ng_fontawesome "Hyperion Gray")
 
