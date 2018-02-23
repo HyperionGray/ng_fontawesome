@@ -1,6 +1,8 @@
 name: ng_fontawesome
-version: 4.7.0+5
-description: Font Awesome for Angular
+version: 4.7.0+6
+description: >
+  Contains directives for using glyphs from the popular Font Awesome library.
+
 authors:
   - Mark E. Haase <mehaase@gmail.com>
 homepage: https://github.com/hyperiongray/ng_fontawesome
