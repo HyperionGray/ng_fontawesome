@@ -1,6 +1,6 @@
 # Font Awesome for Angular Dart
 
-[View Demo](https://hyperiongray.github.io/ng_fontawesome/)
+[View Demo](https://hyperiongray.github.io/ng_fontawesome_demo/)
 
 ## Basic Usage
 
