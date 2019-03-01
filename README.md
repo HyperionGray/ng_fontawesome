@@ -38,10 +38,13 @@ To test it out, switch to the `ng_fontawesome_demo` project and run:
     $ pub get
     $ webdev serve
 
-Update the version in pubspec.yaml to match the upstream Font Awesome version and
-commit all of the changed files. To publish:
+To publish:
 
-    $ pub publish
+1. Put new version in `pubspec.yaml`
+2. Update `CHANGELOG.md`
+3. Run `dartdoc` to make sure it can run successfully
+4. Create and push a git tag
+5. Publish: `pub publish`
 
 ---
 
