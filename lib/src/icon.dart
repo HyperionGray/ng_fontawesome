@@ -13,11 +13,11 @@ class FaIcon implements OnInit {
     @Input()
     String name;
 
-    /// The style of icon: regular, solid, light, or brand. (Default: solid)
+    /// The group of icon: regular, solid, light, or brand. (Default: solid)
     @Input()
-    String style = 'solid';
+    String group = 'solid';
 
-    static const STYLE_CLASSES = const {
+    static const GROUP_CLASSES = const {
         'brand': 'fab',
         'regular': 'far',
         'solid': 'fas',
@@ -91,9 +91,9 @@ class FaIcon implements OnInit {
     Map<String, bool> classes = {};
 
     void ngOnInit() {
-        var style = FaIcon.STYLE_CLASSES[this.style];
+        var group = FaIcon.GROUP_CLASSES[this.group];
         this.classes['fa-$name'] = true;
-        this.classes[style] = true;
+        this.classes[group] = true;
         if (this.size != null) {
             this.classes['fa-$size'] = true;
         }

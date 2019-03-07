@@ -15,10 +15,10 @@ class FaList implements AfterContentInit {
     @Input()
     String bullet;
 
-    /// The style of the default bullet: solid, regular, or brand. (Default:
+    /// The group of the default bullet: solid, regular, or brand. (Default:
     /// solid)
     @Input()
-    String style = 'solid';
+    String group = 'solid';
 
     /// Icon list items nested inside this element.
     @ContentChildren(FaListItem)
@@ -33,11 +33,10 @@ class FaList implements AfterContentInit {
 
     /// Copy the bullet icon into any children that don't have one.
     void _copyBulletToChildren() {
-        print('copy bullet');
         for (var childIcon in childIcons) {
             if (childIcon.bullet == null) {
                 childIcon.bullet = this.bullet;
-                childIcon.style = this.style;
+                childIcon.group = this.group;
             }
         }
     }
@@ -48,7 +47,7 @@ class FaList implements AfterContentInit {
 @Component(
     selector: 'fa-li',
     styleUrls: const ['css/all.min.css'],
-    template: '''<li><span class="fa-li"><fa [style]="style" [name]="bullet">
+    template: '''<li><span class="fa-li"><fa [group]="group" [name]="bullet">
         </fa></span><ng-content></ng-content></li>''',
     directives: const [FaIcon]
 )
@@ -57,7 +56,7 @@ class FaListItem {
     @Input()
     String bullet;
 
-    /// The style of the bullet: solid, regular, or brand. (Default: solid)
+    /// The group of the bullet: solid, regular, or brand. (Default: solid)
     @Input()
-    String style = 'solid';
+    String group = 'solid';
 }
